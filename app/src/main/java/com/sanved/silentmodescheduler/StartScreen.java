@@ -9,13 +9,13 @@ import android.widget.Button;
 
 public class StartScreen extends AppCompatActivity{
 
+    SharedPreferences prefs;
+    SharedPreferences.Editor ed;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start_screen);
-
-        SharedPreferences prefs;
-        final SharedPreferences.Editor ed;
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         ed = prefs.edit();
 
