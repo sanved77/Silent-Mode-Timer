@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a4d69</color>
+    <color name="colorPrimaryDark">#1d3549</color>
+    <color name="colorAccent">#2a4d69</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <!--welcome yellow-->
+    <color name="yellow_hover">#F0E60D</color>
+    <color name="yellow_pressed">#c0b80a</color>
+
+    <!--info blue-->
+    <color name="indigo_hover">#0ccbee</color>
+    <color name="indigo_pressed">#088ea6</color>
+
+    <!--exc cream-->
+    <color name="exc_hover">#FFF4E6</color>
+    <color name="exc_pressed">#ccc3b8</color>
+
+
+    <!--exit cream-->
+    <color name="exit_hover">#2a4d69</color>
+    <color name="exit_pressed">#213d54</color>
+
+
+    <!-- Screen Colors -->
+    <color name="purple">#9547CC</color>
+    <color name="coffee">#854442</color>
+    <color name="red">#a31c1c</color>
+
+</resources>

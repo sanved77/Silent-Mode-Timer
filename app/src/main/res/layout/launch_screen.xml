@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl1"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <!-- First Welcome screen -->
+    <TextView
+        android:id="@+id/welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/welcome_iv"
+        android:layout_gravity="center"
+
+        android:textAlignment="center"
+        android:text="Silent Mode Timer is pretty easy to use"/>
+
+    <ImageView
+        android:id="@+id/welcome_iv"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/phone"/>
+
+    <Button
+        android:id="@+id/welcome_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_iv"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:padding="12dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/welcome_btn"
+        android:text="Next"/>
+
+
+
+
+
+    <!-- Info screen #9547CC-->
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/info_iv"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="You can Schedule your phone to enter and exit the Silent Mode between a given period of time"/>
+
+    <ImageView
+        android:id="@+id/info_iv"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/clock"/>
+
+    <Button
+        android:id="@+id/info_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_iv"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:background="@drawable/info_btn"
+        android:text="Next"/>
+
+
+
+
+
+
+    <!-- Silent Vibrate screen #9547CC-->
+    <TextView
+        android:id="@+id/silvib_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/silvib_iv"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="What should the phone do ?"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/silvib_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/silvib_vib"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="12dp"
+            android:textSize="18sp"
+            android:text="Vibrate"
+            android:background="@drawable/info_btn"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/silvib_sil"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="12dp"
+            android:textSize="18sp"
+            android:text="Silent"
+            android:background="@drawable/info_btn"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/silvib_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/silvib_iv"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="(Don't worry, you can change this later in the setting too.)"/>
+
+
+
+
+
+
+    <!-- Exception screen #854442-->
+    <TextView
+        android:id="@+id/exc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/exc_b1"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="You can add some contacts as exceptions. Phone will ring when any of these call even if the phone is on Silent Mode"/>
+
+    <Button
+        android:id="@+id/exc_b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add"
+        android:visibility="gone"
+        android:background="@drawable/exc_btn"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/exc_b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exc_b1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:background="@drawable/exc_btn"
+        android:text="Skip"/>
+
+
+
+
+
+
+
+    <!-- Exit Intro screen #a31c1c-->
+    <TextView
+        android:id="@+id/exit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/exit_iv"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="Switch these events On and Off anytim you please"/>
+
+    <ImageView
+        android:id="@+id/exit_iv"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/bulb"/>
+
+    <Button
+        android:id="@+id/exit_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exit_iv"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/exit_btn"
+        android:text="Start Using"/>
+
+
+</RelativeLayout>
