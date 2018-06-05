@@ -16,8 +16,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.sanved.silentmodescheduler.CreateEvent;
 import com.sanved.silentmodescheduler.R;
-import com.sanved.silentmodescheduler.StartScreen;
 
 /**
  * Created by Sanved on 15-02-2017.
@@ -44,8 +44,9 @@ public class LaunchScreen extends AppCompatActivity implements View.OnClickListe
 
         boolean isOpeningForTheFirstTime = prefs.getBoolean("firstTime", true);
 
+        // TODO: 23-05-2017 Change this to StartScreen
         if(!isOpeningForTheFirstTime) {
-            Intent i = new Intent(this, StartScreen.class);
+            Intent i = new Intent(this, CreateEvent.class);
             startActivity(i);
             finish();
         }
@@ -218,9 +219,11 @@ public class LaunchScreen extends AppCompatActivity implements View.OnClickListe
 
     public void exitToStartScreen(){
 
+        // TODO: 23-05-2017 Put startscreen here
+
         ed.putBoolean("firstTime", false);
         ed.commit();
-        Intent i = new Intent(this, StartScreen.class);
+        Intent i = new Intent(this, CreateEvent.class);
         startActivity(i);
         finish();
 

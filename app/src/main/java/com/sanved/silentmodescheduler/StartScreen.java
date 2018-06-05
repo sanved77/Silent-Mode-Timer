@@ -1,5 +1,6 @@
 package com.sanved.silentmodescheduler;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -23,8 +24,10 @@ public class StartScreen extends AppCompatActivity{
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ed.clear();
-                ed.commit();
+
+                Intent i = new Intent(StartScreen.this, CreateEvent.class);
+                startActivity(i);
+
             }
         });
 
